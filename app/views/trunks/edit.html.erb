@@ -1,0 +1,10 @@
+<% @title = "Edit Trunk" %>
+
+<%= render :partial => "ajax_form",
+  :locals => {
+    :submit_text => "Save"
+  }
+%>
+
+<p><%= back %> | <%=  link_to("Details", trunk_path(@trunk)) %></p>
+

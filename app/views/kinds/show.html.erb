@@ -1,0 +1,24 @@
+<% @title = "Show Species" %>
+
+<p>
+  <%= image_tag @kind.picture.url(:medium) %>
+</p>
+
+<p>
+  <b>Scientific:</b>
+  <%=h @kind.scientific %>
+</p>
+
+<p>
+  <b>Portugues:</b>
+  <%=h @kind.portugues %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @kind.description %>
+</p>
+
+<p><%= back %> | <%=  link_to("Edit", edit_kind_path(@kind)) %></p>
+
+

@@ -1,0 +1,14 @@
+<tr id = "process_trunk-<%= process_trunk.id %>">
+
+  <td><%=h process_trunk.traceable %></td>
+  <td><%=h format_date(process_trunk.date) %></td>
+  <td><%=h truncate(process_trunk.description, :length => 30) %></td>
+  <td>(<%= link_to 'Show', process_trunk %></td>
+  <td><%= link_to 'Edit', edit_process_trunk_path(process_trunk) %></td>
+  <td><% if admin? %>
+          <%= link_to 'Delete', process_trunk_path(process_trunk.id),
+              :method => :delete,
+              :confirm => 'Are you sure?' %>
+  <% end%>)</td>
+
+</tr>

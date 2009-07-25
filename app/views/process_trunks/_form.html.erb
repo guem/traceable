@@ -1,0 +1,21 @@
+<% form_for(@process_trunk) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :trunk_id %>
+    <%= f.collection_select(:trunk_id,
+      [@trunk], :id, :traceable) %>
+  </p>
+  <p>
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description, :size => "30x6" %>
+  </p>
+  <p>
+    <%= submit_tag submit_text %>
+  </p>
+  
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+quercus:
+  scientific: Quercus robur
+  portugues: Carvalho
+  description: This is an oak
+
+fagus:
+  scientific: Fagus fagus
+  portugues: Fago / Faia
+  description: This is a beech
+
+fraxinus:
+  scientific: Fraxinus excelsior
+  portugues: Freixo
+  description: This is an ash
+
+tilia:
+  scientific: Tilia cordata
+  portugues: Tília
+  description: This is a basswood

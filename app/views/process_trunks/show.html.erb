@@ -1,0 +1,18 @@
+<% @title = "Show History" %>
+
+<p>
+  <b>Trunk:</b>
+  <%=h @process_trunk.trunk.traceable %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @process_trunk.date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @process_trunk.description %>
+</p>
+
+<p><%= back %> | <%=  link_to("Edit", edit_process_trunk_path(@process_trunk)) %></p>

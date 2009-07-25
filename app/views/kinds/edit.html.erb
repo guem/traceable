@@ -1,0 +1,9 @@
+<% @title = "Edit Species" %>
+
+<%= render :partial => "form",
+  :locals => {
+    :submit_text => "Save"
+  }
+%>
+
+<p><%= back %> | <%=  link_to("Details", kind_path(@kind)) %></p>

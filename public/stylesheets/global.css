@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #ddd;
+}
+table {
+   border-collapse: separate;
+   border-spacing: 5px 0px;
+   table-layout:auto;
+   text-align: left;
+   /*padding-left: 0;
+   padding-right: 0;*/
+}
+tr {
+   vertical-align: top;
+}
+td {
+   padding: 1px;
+   /*border: 1px solid #006999;*/
+}
+#container {
+  width: 750px;
+  margin: 0 auto;
+}
+#main {
+}
+.generated {
+   max-height: 400px;
+   border: 1px solid #006999;
+   overflow:auto;
+}
+.trunks_list {
+   max-height: 320px;
+}
+.process_trunks_list {
+}
+.kinds_list {
+}
+#header {
+  background-color: #006999;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+#navigation {
+  background-color: orange;
+  padding: 10px;
+  color: #fff;
+  text-align: left;
+}
+#content {
+  border: 2px solid #006999;
+  padding: 10px;
+  background-color: #fff;
+  min-height: 220px;
+  width: 77%;
+  height:auto;
+  float: right;
+  margin: 0;
+}
+#sidebar {
+  background-color: #9999ff;
+  padding: 10px;
+  color: #999999;
+  text-align: left;
+  margin-right: 78%;
+  height: auto;
+  overflow:hidden;
+}
+#footer {
+  background-color: #9999ff;
+  padding: 10px;
+  color: #fff;
+  text-align: left;
+}
+h1 {
+  font-size: XX-large;
+  margin-bottom: 0.5em;
+}h2 {
+  font-size: large;
+  margin-bottom: 0.5em;
+}
+.clear {
+  clear: both;
+  height: 1px;
+  overflow: visible;
+  margin: 0;
+}
+.flash {
+  border: 1px solid #000;
+  padding: 0.2em
+}
+.notice {
+  border: 1px solid #008414;
+  color: #008414;
+  background-color: #D8FFBB;
+}
+.error {
+  border: 1px solid #990A0C;
+  color: #990A0C;
+  background-color: #FFA894;
+}
+label {
+  display: block;
+}
+#newForm {
+  margin: 1em 0;
+  padding: 0.5em;
+  background-color: #E7E7E7;
+}
+input {
+  margin: 0.5em 0;
+}
+input[type="submit"] {
+  margin-top: 2em;
+}
+.newTrunk {
+  margin-top: 1em;
+  display: block;
+}
+.fieldWithErrors {
+  background-color: red;
+}
+.formError{
+color: red;
+}
+/* Start custom button CSS here
+    ---------------------------------------- */
+    .btn {
+      display:inline-block;
+      background:none;
+      margin:0;
+      padding:3px 0;
+      border-width:0;
+      overflow:visible;
+      font:100%/1.2 Arial,Sans-serif;
+      text-decoration:none;
+      color:#333;
+      }
+    * html button.btn {
+      padding-bottom:1px;
+      }
+    /* Immediately below is a temporary hack to serve the
+       following margin values only to Gecko browsers
+       Gecko browsers add an extra 3px of left/right
+       padding to button elements which can't be overriden.
+       Thus, we use -3px of left/right margin to overcome this. */
+    html:not([lang*=""]) button.btn {
+      margin:0 -3px;
+      }
+    .btn span {
+      background:#ddd url(img/bg-button.gif) repeat-x 0 0;
+      margin:0;
+      padding:3px 0;
+      border-left:1px solid #bbb;
+      border-right:1px solid #aaa;
+      }
+    * html .btn span {
+      padding-top:0;
+      }
+    .btn span span {
+      position:relative;
+      padding:3px .4em;
+      border-width:0;
+      border-top:1px solid #bbb;
+      border-bottom:1px solid #aaa;
+      }
+
+    /* pill classes only needed if using pill style buttons ( LEFT | CENTER | RIGHT ) */
+    button.pill-l span {
+      border-right-width:0;
+      }
+    button.pill-l span span {
+      border-right:1px solid #bbb;
+      }
+    button.pill-c span {
+      border-right-style:none;
+      border-left-color:#fff;
+      }
+    button.pill-c span span {
+      border-right:1px solid #bbb;
+      }
+    button.pill-r span {
+      border-left-color:#fff;
+      }
+
+/* only needed if implementing separate hover/focus/active state for buttons */
+    .btn:hover span, .btn:hover span span, .btn:focus span, .btn:focus span span {
+      cursor:pointer; /* important for any clickable/pressable element */
+      border-color:#9cf !important;
+      color:#000;
+      }
+    .btn:active span {
+      background-position:0 -400px;
+      outline:none;
+      }
+    .btn:focus, .btn:active {
+      outline:none; /* doesn't seem to be respected for <button>, only <a> */
+      }
+
+/* use if one button should be the 'primary' button */
+    .primary {
+      font-weight:bold;
+      color:#000;
+      }
+

@@ -1,0 +1,19 @@
+<% @title = "Lookup TraceableTree" %>
+
+<% form_tag :action => "show_google_map" do %>
+
+<p>
+  <%= label :input, "Please enter your traceable code" %>
+  <%= text_field_tag :input_traceable_code
+  %>
+</p>
+
+  <%=  submit_tag "See the map!"%>
+
+<% end %>
+
+<!--,
+        :size => 8,
+        :maxlength => 8,
+        :class => "input_field",
+        :disabled => false -->

@@ -1,0 +1,17 @@
+<% @title = "List History" %>
+
+<div class="generated process_trunks_list" >
+  <table>
+    <tr>
+      <th>Trunk</th>
+      <th>Date</th>
+      <th>Description</th>
+    </tr>
+
+    <%= render :partial => @process_trunks %>
+
+  </table>
+</div>
+
+
+<%= link_to 'New History Entry', new_process_trunk_path %>

@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  traceable: "87654321"
+  kind: tilia
+  location: "48.7137968,9.5676341"
+
+two:
+  traceable: "76543210"
+  kind: fraxinus
+  location: "Stuttgart"
+
+three:
+  traceable: "98765432"
+  kind: fraxinus
+  location: "Berlin"

@@ -1,0 +1,15 @@
+<tr id = "trunk-<%= trunk.id %>">
+
+  <td><%=image_tag trunk.picture.url(:thumb) %></td>
+  <td><%= trunk.traceable %></td>
+  <td><%= trunk.scientific %></td>
+  <td><%= trunk.portugues %></td>
+  <td><%= link_to "Show", trunk %></td>
+  <td><% if dataentry? %>
+        <%= link_to("Edit", edit_trunk_path(trunk)) %></td>
+        <td><%= link_to("Delete", trunk_path(trunk),
+            :method => :delete,
+            :confirm => trunk.process_trunks.empty? ? "Do you want to delete?" : 
+                  "There are " + trunk.process_trunks.size.to_s  + " history entries referencing this trunk. They also will be deleted. Do you want to delete?") %>
+  <% end %></td>
+</tr>

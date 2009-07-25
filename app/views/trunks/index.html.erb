@@ -1,0 +1,29 @@
+<% @title = "List Trunks" %>
+
+<div class = "generated trunks_list">
+  <table id= "trunks">
+    <tr>
+      <th></th>
+      <th>Traceable</th>
+      <th>Scientific</th>
+      <th>Portugues</th>
+    </tr>
+
+    <%= render :partial => @trunks %>
+
+  </table>
+</div>
+
+
+<h2>Add new Trunk</h2>
+
+<% if dataentry? %>
+
+  <%= render :partial => "ajax_form",
+      :locals => {
+      :submit_text => "Create"
+      }
+  %>
+
+<% end %>
+

@@ -1,0 +1,9 @@
+<% @title = "Edit History Entry" %>
+
+<%= render :partial => "form",           # mit Auswahl für trunks form_with_trunk_selection",
+  :locals => {
+        :submit_text => "Save"
+  }
+%>
+
+<p><%= back %> | <%=  link_to("Details", process_trunk_path(@process_trunk)) %></p>

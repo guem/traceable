@@ -1,0 +1,48 @@
+<% form_for @kind, :html => { :multipart => true } do |f| %>
+
+<%= f.error_messages %>
+<table>
+  <tr>
+    <td height="155px">
+      <%= image_tag @kind.picture.url(:medium) %>
+    </td>
+    <td rowspan="4">
+      <%= f.label :description %>
+      <%= f.text_area :description, :cols => 27, :rows => 21 %>
+      <%= error_message_on(:kind, :description) %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.file_field :picture%>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.label :scientific %>
+      <%= f.text_field :scientific, :size => 35 %>
+      <%= error_message_on(:kind, :scientific) %>
+      
+    </td>
+  </tr>
+  <tr>
+     <td>
+      <%= f.label :portugues %>
+      <%= f.text_field :portugues, :size => 35 %>
+      <%= error_message_on(:kind, :portugues) %>
+     </td>
+  </tr>
+  <tr>
+     <td colspan="2">
+      <%= f.label :infolink %>
+      <%= f.text_field :infolink, :size => 89 %>
+      <%= error_message_on(:kind, :infolink) %>
+     </td>
+  </tr>
+</table>
+  
+  
+<p><%= submit_tag submit_text %></p>
+  
+<% end %>

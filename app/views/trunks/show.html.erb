@@ -1,0 +1,34 @@
+<% @title = "Show Trunk with History" %>
+
+<p><%=image_tag @trunk.picture.url(:thumb) %><p>
+<p>Traceable id: <%= h @trunk.traceable %></p>
+<p>Species: <%= h @trunk.portugues%> (<%= h @trunk.scientific %>)</p>
+<p>Location Lat: <%= h @trunk.loc_lat %> Location Lon: <%= h  @trunk.loc_lon %></p>
+<p>Volume: <%= h @trunk.volume %></p>
+<p>Description: <%= h @trunk.description %></p>
+<p>Created: <%= format_time(@trunk.created_at) %></p>
+<p>Last changed: <%= format_time(@trunk.updated_at) %></p>
+
+<br/>
+<h4>History</h4>
+<div id="generated_list">
+  <table id = "process_trunks">
+    <%= render :partial => @process_trunks %>
+  </table>
+</div>
+
+<h2>Add new History Entry</h2>
+  
+<%= render :partial => "process_trunks/form",
+  :locals => {
+        :submit_text => "Add History Entry"
+  }
+%>
+
+<%= button_to 'See the map!',
+      :controller => 'trunks',
+      :action => 'show_google_map',
+      :input_traceable_code => @trunk.traceable %>
+
+<p><%= back %> | <%=  link_to("Edit", edit_trunk_path(@trunk)) %></p>
+

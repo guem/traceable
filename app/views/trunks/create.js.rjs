@@ -1,0 +1,2 @@
+page.insert_html :bottom, 'trunks', :partial => 'trunk'
+page.visual_effect :highlight, "trunk-#{@trunk.id}"

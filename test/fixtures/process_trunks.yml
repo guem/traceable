@@ -1,0 +1,22 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+step1trunk1:
+  trunk: one
+  date: 2009-07-13 02:01:45
+  description: This is the first process step in the history of the first trunk
+
+step2trunk1:
+  trunk: one
+  date: 2009-07-13 02:01:45
+  description: This is the second process step in the history of the first trunk
+
+step1trunk2:
+  trunk: two
+  date: 2009-07-13 02:01:45
+  description: This is the first process step in the history of the second trunk
+
+step2trunk2:
+  trunk: two
+  date: 2009-07-13 02:01:45
+  description: This is the second process step in the history of the second trunk
+

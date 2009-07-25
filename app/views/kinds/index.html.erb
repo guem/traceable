@@ -1,0 +1,19 @@
+<% @title = "List Species" %>
+
+<div class="generated kinds_list">
+  <table>
+    <tr>
+      <th></th>
+      <th>Scientific</th>
+      <th>Portugues</th>
+      <th>Description</th>
+    </tr>
+
+    <%= render :partial => @kinds %>
+  
+  </table>
+</div>
+
+<br />
+
+<%= link_to 'New Species', new_kind_path %>

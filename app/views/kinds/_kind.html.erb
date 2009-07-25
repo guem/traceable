@@ -1,0 +1,10 @@
+<tr id = "kind-<%= kind.id %>">
+
+  <td><%=image_tag kind.picture.url(:thumb) %></td>
+  <td><%=h kind.scientific %></td>
+  <td><%=h kind.portugues %></td>
+  <td><%=h kind.description %></td>
+  <td><%= link_to 'Show', kind_path(kind) %></td>
+  <td><%= link_to 'Edit', edit_kind_path(kind) %></td>
+  <td><%= link_to 'Destroy', kind, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
