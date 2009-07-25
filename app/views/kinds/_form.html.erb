@@ -3,35 +3,21 @@
 <%= f.error_messages %>
 <table>
   <tr>
-    <td height="155px">
+    <td>
       <%= image_tag @kind.picture.url(:medium) %>
+      <%= f.file_field :picture%>
+      <%= f.label :scientific %>
+      <%= f.text_field :scientific, :size => 35 %>
+      <%= error_message_on(:kind, :scientific) %>
+      <%= f.label :portugues %>
+      <%= f.text_field :portugues, :size => 35 %>
+      <%= error_message_on(:kind, :portugues) %>
     </td>
-    <td rowspan="4">
+    <td>
       <%= f.label :description %>
       <%= f.text_area :description, :cols => 27, :rows => 21 %>
       <%= error_message_on(:kind, :description) %>
     </td>
-  </tr>
-  <tr>
-    <td>
-      <%= f.file_field :picture%>
-      
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <%= f.label :scientific %>
-      <%= f.text_field :scientific, :size => 35 %>
-      <%= error_message_on(:kind, :scientific) %>
-      
-    </td>
-  </tr>
-  <tr>
-     <td>
-      <%= f.label :portugues %>
-      <%= f.text_field :portugues, :size => 35 %>
-      <%= error_message_on(:kind, :portugues) %>
-     </td>
   </tr>
   <tr>
      <td colspan="2">
@@ -41,7 +27,6 @@
      </td>
   </tr>
 </table>
-  
   
 <p><%= submit_tag submit_text %></p>
   

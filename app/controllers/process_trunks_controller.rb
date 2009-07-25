@@ -55,7 +55,7 @@ class ProcessTrunksController < ApplicationController
     respond_to do |format|
       if @process_trunk.save
         flash[:notice] = 'ProcessTrunk was successfully created.'
-        format.html { redirect_to(@process_trunk.trunk) }
+        format.html { redirect_to :back }
         format.xml  { render :xml => @process_trunk, :status => :created, :location => @process_trunk }
       else
         format.html { render :action => "new" }

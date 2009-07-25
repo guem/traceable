@@ -12,8 +12,11 @@ table {
    /*padding-left: 0;
    padding-right: 0;*/
 }
+th {
+   
+}
 tr {
-   vertical-align: top;
+   /*vertical-align: top;*/
 }
 td {
    padding: 1px;
