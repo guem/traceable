@@ -16,7 +16,7 @@ th {
    
 }
 tr {
-   /*vertical-align: top;*/
+   vertical-align:middle;
 }
 td {
    padding: 1px;

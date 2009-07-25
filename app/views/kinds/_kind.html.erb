@@ -4,6 +4,10 @@
   <td><%=h kind.scientific %></td>
   <td><%=h kind.portugues %></td>
   <td><%=h kind.description %></td>
+
+  <!-- <td><a href= "<%= kind_path(kind) %>" class="btn"><span><span>Show</span></span></a></td>
+  <td><a href= "<%= edit_kind_path(kind) %>" class="btn"><span><span>Edit</span></span></a></td> -->
+
   <td><%= link_to 'Show', kind_path(kind) %></td>
   <td><%= link_to 'Edit', edit_kind_path(kind) %></td>
   <td><%= link_to 'Destroy', kind, :confirm => 'Are you sure?', :method => :delete %></td>

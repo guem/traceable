@@ -1,2 +1,5 @@
-tmp
-*.sqlite3
+l*.log			#Logfiles
+tmp			#Tmp directory 
+*.sqlite3		#Database
+.* 			# Ignore all dotfiles...
+!.gitignore 		# except for .gitignore
