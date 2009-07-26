@@ -3,3 +3,4 @@ tmp			#Tmp directory
 *.sqlite3		#Database
 .* 			# Ignore all dotfiles...
 !.gitignore 		# except for .gitignore
+nbproject		#nbproject directory (netbeans git integration)
