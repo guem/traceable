@@ -2,6 +2,7 @@
 #
 # Herbert: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw
 # traceable.heroku: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw
+# http://traceable.heroku.com/ => ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw
 # afternoon-samurai-14: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hSSOu9tdrzow8HWXhmzkkQux6hCKhQhNg-buthAp8iqBG91zMTbdqeD7w
 #
 # Taken from:
@@ -43,7 +44,7 @@ test:
 
 production:
   :google_maps:
-    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw]"
+    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw]"
   :site:
     :title: "[Traceable Trees]"
     :address: "[http://traceable.heroku.com/]"
