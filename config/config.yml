@@ -43,8 +43,7 @@ test:
 
 production:
   :google_maps:
-    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hSSOu9tdrzow8HWXhmzkkQux6hCKhQhNg-buthAp8iqBG91zMTbdqeD7w]"
-    #:api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw]"
+    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw]"
   :site:
     :title: "[Traceable Trees]"
     :address: "[http://traceable.heroku.com/]"
