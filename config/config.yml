@@ -1,9 +1,6 @@
 # Configuration file
 #
 # http://localhost:3000/ => ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw
-# traceable.heroku: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw
-# http://traceable.heroku.com/ => ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw
-# afternoon-samurai-14: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hSSOu9tdrzow8HWXhmzkkQux6hCKhQhNg-buthAp8iqBG91zMTbdqeD7w
 # http://heroku.com/ => ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQ8nda2l8z-oXOZMhvo4DA8FzaARRSUOr1l6MMYwDUaFhGRFMdSwALB7Q
 #
 # Taken from:
@@ -35,9 +32,9 @@
 
 development: &non_production_settings
   :google_maps:
-    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw]"
+    :api_key: "ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw"
   :site:
-    :title: "[Traceable Trees in development]"
+    :title: "Traceable Trees in development"
     :address: "http://localhost:3000/"
 
 test:
@@ -47,5 +44,5 @@ production:
   :google_maps:
     :api_key: "ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQ8nda2l8z-oXOZMhvo4DA8FzaARRSUOr1l6MMYwDUaFhGRFMdSwALB7Q"
   :site:
-    :title: "[Traceable Trees]"
+    :title: "Traceable Trees"
     :address: "http://traceable.heroku.com/"

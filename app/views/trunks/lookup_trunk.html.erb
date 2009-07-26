@@ -2,20 +2,9 @@
 
 <% form_tag :action => "show_google_map" do %>
 
-<p>
   <%= label :input, "Please enter your traceable code" %>
-  <%= text_field_tag :input_traceable_code
-  %>
-</p>
-
-<p><%= APP_CONFIG[:google_maps][:api_key] %></p>
-
+  <%= text_field_tag :input_traceable_code %>
+  
   <%=  submit_tag "See the map!"%>
 
 <% end %>
-
-<!--,
-        :size => 8,
-        :maxlength => 8,
-        :class => "input_field",
-        :disabled => false -->
