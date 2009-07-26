@@ -1,0 +1,48 @@
+# Configuration file
+#
+# Herbert: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw
+# traceable.heroku: ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw
+#
+# Taken from:
+#  First I put my config.yml file within the /config/ directory within my Rails application. It looks something like this:
+#
+#  development: &non_production_settings
+#    :google_analytics:
+#      :api_key: "[Enter Google ID]"
+#    :site:
+#      :title: "[Title]"
+#      :address: "http://localhost:3000/"
+#
+#  test:
+#    <<: *non_production_settings
+#
+#  production:
+#    :google_analytics:
+#      :api_key: "[Enter Google ID]"
+#    :site:
+#      :title: "[Title]"
+#      :address: "[Address]"
+#  Then, I create a new file called load_config.rb within the /config/initializers directory. You can name the file whatever you want – that’s just what I call it. This is where the actually YAML loading is going to happen – and this is what it looks like:
+#
+#  raw_config = File.read(RAILS_ROOT + "/config/config.yml")
+#  APP_CONFIG = YAML.load(raw_config)[RAILS_ENV]
+#  Now any time I want to all one of these variables I just call it like:
+#
+#  <%= APP_CONFIG[:site][:title] %>
+
+development: &non_production_settings
+  :google_maps:
+    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQND6lFKwy8GnkVs77ke4gh1EeE_BSo-n8E54_nxnQ_uWIm2yIvXWpIYw]"
+  :site:
+    :title: "[Traceable Trees in development]"
+    :address: "http://localhost:3000/"
+
+test:
+  <<: *non_production_settings
+
+production:
+  :google_maps:
+    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRaVD5OdKF7ESCP--fJD9YgcFRWFw]"
+  :site:
+    :title: "[Traceable Trees]"
+    :address: "[http://traceable.heroku.com/]"
