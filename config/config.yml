@@ -45,7 +45,7 @@ test:
 
 production:
   :google_maps:
-    :api_key: "[ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQ8nda2l8z-oXOZMhvo4DA8FzaARRSUOr1l6MMYwDUaFhGRFMdSwALB7Q]"
+    :api_key: "ABQIAAAAjvBwdlzPB7Fj-6-PU8kK0hQ8nda2l8z-oXOZMhvo4DA8FzaARRSUOr1l6MMYwDUaFhGRFMdSwALB7Q"
   :site:
     :title: "[Traceable Trees]"
     :address: "http://traceable.heroku.com/"
